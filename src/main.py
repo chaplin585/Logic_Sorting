@@ -54,7 +54,7 @@ class MyApp(App):
         sort_main_file()        
         self.lb.text = "Last update: \n"+str(now.strftime("%d-%m-%Y %H:%M"))    
     def  btnf3(self, inctance):
-        os.system('main.xlsx')
+        os.system('../thirdparty/Main.xlsx')
     
         
         
