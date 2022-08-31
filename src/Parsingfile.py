@@ -56,7 +56,7 @@ def main():
         while i < len(values):
             while j < len(values[i]):
                 ws[ABC[j]+str(i+1)] = values[i][j] 
-                wb.save("sample.xlsx")
+                wb.save("Google Data.xlsx")
 
                 j+=1
             j = 0
