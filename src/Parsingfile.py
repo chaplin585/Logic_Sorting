@@ -51,16 +51,20 @@ def main():
             print('No data found.')
             return
 
-        
-     
-        
-            
+        i = 0
+        j = 0
+        while i < len(values):
+            while j < len(values[i]):
+                ws[ABC[j]+str(i+1)] = values[i][j] 
+                wb.save("sample.xlsx")
+
+                j+=1
+            j = 0
+            i+=1
+        wb.close()   
         
     except HttpError as err:
         print(err)
-
-    
-
 
 if __name__ == '__main__':
     main()
