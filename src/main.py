@@ -13,9 +13,8 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 from kivy.core.window import Window
 from kivy.config import Config
-from testdownload import main
-from testsort2 import sort_main_file
-from sort1 import asd
+from Parsingfile import main
+from Sorting import sort_main_file
 import os.path
 import os
 from openpyxl import Workbook
