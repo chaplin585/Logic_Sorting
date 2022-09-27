@@ -1,4 +1,4 @@
 *.xlsx
 *.json
 *.o
-/.pyc
+*.pyc
