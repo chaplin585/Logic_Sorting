@@ -1,21 +1,34 @@
-Logic-Sorting: thirdparty\main.o thirdparty\Parser.o thirdparty\Sorter.o
-	python thirdparty\main.o
-	python thirdparty\Parser.o
-	python thirdparty\Sorter.o
+TARGET = Logic-Sorting
+PY = python
+TEST = python -m unittest  
 
+
+$(TARGET): RUN Test 
+	RUN
+	Test
+
+RUN: thirdparty/main.o thirdparty/Sorter.o thirdparty/Parser.o
+	$(PY) thirdparty/main.o
+	$(PY) thirdparty/Parser.o
+	$(PY) thirdparty/Sorter.o
 
 
 main.o: src\main.py 
-	python src\main.py
+	$(PY) src\main.py
 
 Parser.o: src\Parsingfile.py 
-	python src\Parsingfile.py
+	$(PY) src\Parsingfile.py
 
 Sorter.o: src\Sorting.py 
-	python src\Sorting.py
+	$(PY) src\Sorting.py
+
+Test: test/test_parsing.py test/test_sorting.py
+	$(Test) test/test_parsing.py 
+	$(Test) test/test_sorting.py
+
 
 
 
 clean:
-	rm Logic-Sorting *o
+	rm $(TARGET) *.o
 
