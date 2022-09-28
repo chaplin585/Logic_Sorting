@@ -2,9 +2,6 @@ from openpyxl import Workbook
 import openpyxl
 
 def sort_main_file():
-   
-
-    
     i = 2
     j = 2
     m = 1

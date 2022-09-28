@@ -21,33 +21,21 @@ from openpyxl import Workbook
 import openpyxl
 import datetime
 Config.set('graphics', 'resizable', True)
-
-
-
-
 class MyApp(App):
-    
-    
     def __init__(self):
         super().__init__()
         self.lb = Label(text = 'Please update data', font_size = 25,size_hint =(0.75, 1))
     def build(self):
-        
         Window.size = (1000, 200)
         Window.clearcolor = (255/255, 186/255, 3/255)
         Window.title = "test"
-        
         box = BoxLayout()
         btn1 = Button(text='Update Data', font_size = 25, on_press = self.btnf1)
         btn3 = Button(text='Main tabs', font_size = 25, on_press = self.btnf3)
-        
-        
         box.add_widget(btn1)        
         box.add_widget(btn3)
         box.add_widget(self.lb)
         return box
-    
-
     def  btnf1(self, inctance):
         now = datetime.datetime.now()
         main()
@@ -55,12 +43,5 @@ class MyApp(App):
         self.lb.text = "Last update: \n"+str(now.strftime("%d-%m-%Y %H:%M"))    
     def  btnf3(self, inctance):
         os.system('../thirdparty/Main.xlsx')
-    
-        
-        
-
-
-
-
 if __name__ == "__main__":
     MyApp().run()
