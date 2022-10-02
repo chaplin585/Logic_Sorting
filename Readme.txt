@@ -12,3 +12,5 @@ About the program :
 For developers:
 To get full information from unit tests, you need to write the python -m unit test command in the console (open in the test folder)
 test_parsing.py (to test the parser) python -m unit test test_sorting.py (to check the sorting operation)
+
+GoogleForms: https://docs.google.com/forms/d/e/1FAIpQLSdgJYRkLvOccPN8CA1QUBwfNI-rqiO34pxsrrCJ8zwR2M8tRQ/viewform?usp=sf_link
