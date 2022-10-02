@@ -43,7 +43,7 @@ def main():
         while i < len(values):
             while j < len(values[i]):
                 ws[ABC[j]+str(i+1)] = values[i][j] 
-                wb.save("../thirdparty/Google Data.xlsx")
+                wb.save("C:\\logic_sorting\\thirdparty\\Google Data.xlsx")
                 j+=1
             j = 0
             i+=1
