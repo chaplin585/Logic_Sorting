@@ -1,6 +1,7 @@
 os: winodws 10
 language: python
-compiler: python
+python:
+  - "3.9.0"
 script:
-    -make && make test
+  - make && make test
     
