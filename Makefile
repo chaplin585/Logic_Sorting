@@ -16,7 +16,9 @@ Sorter.o: src\Sorting.py
 	$(PY) src\Sorting.py
 
 test:  
-	$(PY) test/test_main_btn.py
+	$(PY) test/test_main_btns.py
+	$(PY) test/test_main_btn2.py
+	$(PY) test/test_main_label.py
 	  
 
 
