@@ -1,0 +1,6 @@
+os: winodws 10
+language: python
+compiler: python
+script:
+    -make && make test
+    
