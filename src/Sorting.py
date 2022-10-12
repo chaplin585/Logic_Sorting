@@ -12,8 +12,8 @@ def sort_main_file():
     cnt2 = 1
     test1 = ''
     test2 = ''
-    wb1 = openpyxl.reader.excel.load_workbook(filename = '../thirdparty/Google Data.xlsx')
-    wb2 = openpyxl.reader.excel.load_workbook(filename = '../thirdparty/Main.xlsx')
+    wb1 = openpyxl.reader.excel.load_workbook(filename = 'C:\\logic_sorting\\thirdparty\\Google Data.xlsx')
+    wb2 = openpyxl.reader.excel.load_workbook(filename = 'C:\\logic_sorting\\thirdparty\\Main.xlsx')
     ws2 = wb2.active
     ws1 = wb1.active
     while ws1['A'+str(i)].value or ws1['A'+str(i+1)].value != None:
@@ -56,7 +56,7 @@ def sort_main_file():
                             cnt1+=1
                     m+=1
                 j+=1
-    wb1.save("sample.xlsx")
+    wb1.save("C:\\logic_sorting\\thirdparty\\sample.xlsx")
     wb2.save("main.xlsx")
     wb1.close()
     wb2.close()

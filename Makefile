@@ -16,10 +16,9 @@ Sorter.o: src\Sorting.py
 	$(PY) src\Sorting.py
 
 test:  
-	$(PY) thirdparty/Test.o
+	$(PY) test/test_main_btn.py
 	  
-Test.o: test_parsing.py	
-	$(PY) test_parsing.py
+
 
 .PHONY: all test clean
 
