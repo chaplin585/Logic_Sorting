@@ -11,7 +11,7 @@ install:
 	sudo easy_install pip
 	pip install tkinker
 src\main.py: 
-	$(PY) main.py
+	$(PY) src\main.py
 
 src\Parsingfile.py: 
 	$(PY) Parsingfile.py
