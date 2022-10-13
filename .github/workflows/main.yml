@@ -9,4 +9,6 @@ jobs:
     steps:      
             
       - name: Build application
-        run: | make 
+        run: | 
+          make 
+          make test
