@@ -1,11 +1,14 @@
 TARGET = Logic-Sorting
 PY = python
 
-$(TARGET): src\main.py src\Sorting.py src\Parsingfile.py
+$(TARGET): src\main.py src\Sorting.py src\Parsingfile.py install
+	install
 	$(PY) src\main.py
 	$(PY) src\Parsingfile.py
 	$(PY) src\Sorting.py	
 
+install:
+	pip install tkinker
 src\main.py: 
 	$(PY) main.py
 
