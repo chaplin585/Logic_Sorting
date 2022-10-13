@@ -9,10 +9,7 @@ jobs:
     steps:      
             
       - name: Build application
-        run:  
-<<<<<<< HEAD
-          python -m pip install --upgrade pip
+        run: 
+          make
           
-=======
-          python src/main.py
->>>>>>> 4589b657818fa4f1dba9728269e002f892889200
+
