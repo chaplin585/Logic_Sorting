@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check codestyle
-        run: git ls-files *.{c,h}
+        run: git ls-files *.{py}
 
       
       - name: Build application
