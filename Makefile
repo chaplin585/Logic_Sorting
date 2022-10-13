@@ -1,7 +1,7 @@
 TARGET = Logic-Sorting
 PY = python
 
-$(TARGET): thirdparty/main.o thirdparty/Sorter.o thirdparty/Parser.o 
+$(TARGET): thirdparty\main.o thirdparty/Sorter.o thirdparty/Parser.o 
 	$(PY) thirdparty\main.o
 	$(PY) thirdparty\Parser.o
 	$(PY) thirdparty\Sorter.o	
