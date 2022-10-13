@@ -10,4 +10,5 @@ jobs:
             
       - name: Build application
         run:  
-          python ../src/main.py
+          python -m pip install --upgrade pip
+          
