@@ -1,19 +1,19 @@
 TARGET = Logic-Sorting
 PY = python
 
-$(TARGET): src\main.py thirdparty/Sorter.o thirdparty/Parser.o 
+$(TARGET): src\main.py src\Sorting.py src\Parsingfile.py
 	$(PY) src\main.py
-	$(PY) thirdparty\Parser.o
-	$(PY) thirdparty\Sorter.o	
+	$(PY) src\Parsingfile.py
+	$(PY) src\Sorting.py	
 
 src\main.py: 
 	$(PY) main.py
 
-Parser.o: src\Parsingfile.py 
-	$(PY) src\Parsingfile.py
+src\Parsingfile.py: 
+	$(PY) Parsingfile.py
 
-Sorter.o: src\Sorting.py 
-	$(PY) src\Sorting.py
+src\Sorting.py: 
+	$(PY) Sorting.py
 
 test:  
 	$(PY) test/test_main_btns.py
