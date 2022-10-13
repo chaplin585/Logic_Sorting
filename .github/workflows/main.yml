@@ -10,4 +10,4 @@ jobs:
             
       - name: Build application
         run:  
-          python src/main.py
+          python ../src/main.py
