@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check codestyle
-        run: git ls-files *.{py}
+        run: git ls-files *.{py} | xargs clang-format -i --verbose src/main.py src/Parsingfile.py src/Sorting.py && git diff --exit-code
 
       
       - name: Build application
