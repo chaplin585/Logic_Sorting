@@ -1,0 +1,19 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    runs-on: windows 10
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check codestyle
+        run: git ls-files *.{py} | xargs clang-format -i --verbose src/main.py src/Parsingfile.py src/Sorting.py && git diff --exit-code
+
+      
+      - name: Build application
+        run: make
+
+      - name: Test application
+        run: make test
