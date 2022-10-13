@@ -6,7 +6,7 @@ $(TARGET): thirdparty\main.o thirdparty/Sorter.o thirdparty/Parser.o
 	$(PY) thirdparty\Parser.o
 	$(PY) thirdparty\Sorter.o	
 
-thirdparty\main.o: src\main.py 
+thirdparty\main.o: 
 	$(PY) src\main.py
 
 Parser.o: src\Parsingfile.py 
