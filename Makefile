@@ -8,6 +8,7 @@ $(TARGET): src\main.py src\Sorting.py src\Parsingfile.py install
 	$(PY) src\Sorting.py	
 
 install:
+	sudo easy_install pip
 	pip install tkinker
 src\main.py: 
 	$(PY) main.py
