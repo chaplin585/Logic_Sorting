@@ -21,7 +21,7 @@ jobs:
           
       - name: lib1 
         run: 
-          pip install openpyxl kivy
+          pip install openpyxl kivy pytest
       - name: lib2
         run: 
           pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
