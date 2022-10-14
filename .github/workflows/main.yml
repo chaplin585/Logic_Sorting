@@ -12,7 +12,11 @@ jobs:
       - name: download libs
         run:
           sudo apt -y install python3-pip
+          
+      - name: download requests
+        run:
           sudo pip3 install requests
+          
       - name: lib1 
         run: 
           pip install openpyxl
