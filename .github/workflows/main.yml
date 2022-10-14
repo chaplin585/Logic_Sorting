@@ -8,7 +8,9 @@ jobs:
 
     steps:  
       - uses: actions/checkout@v2    
-      
+      - name: download libs
+        run:
+          sudo apt-get install python3
       - name: download libs
         run:
           sudo apt -y install python3-pip
