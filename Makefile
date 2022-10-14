@@ -7,8 +7,8 @@ $(TARGET): install src\main.py src\Sorting.py src\Parsingfile.py
 	$(PY) src\Parsingfile.py
 	$(PY) src\Sorting.py	
 
-install:
-	export PATH=$PATH:libs
+
+	
 src\main.py: 
 	$(PY) main.py
 
