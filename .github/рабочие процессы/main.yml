@@ -17,7 +17,7 @@ jobs:
           pip install --target libs openpyxl
       - name: lib2
         run: 
-           pip install --target libs --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+          sudo pip3 install --target libs --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
       - name: path
         run:
           export PATH=$PATH:libs
