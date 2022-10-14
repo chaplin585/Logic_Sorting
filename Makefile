@@ -1,7 +1,7 @@
 TARGET = Logic-Sorting
 PY = python
 
-$(TARGET): install src\main.py src\Sorting.py src\Parsingfile.py 
+$(TARGET): src\main.py src\Sorting.py src\Parsingfile.py 
 	install
 	$(PY) src\main.py
 	$(PY) src\Parsingfile.py
