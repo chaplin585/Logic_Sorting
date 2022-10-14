@@ -14,10 +14,10 @@ jobs:
           sudo apt -y install python3-pip
       - name: lib1 
         run: 
-          pip install --target libs openpyxl
+          pip install openpyxl
       - name: lib2
         run: 
-          sudo pip3 install --target libs --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+          pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
       - name: path
         run:
           export PATH=$PATH:libs
