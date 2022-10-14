@@ -10,7 +10,9 @@ jobs:
       - uses: actions/checkout@v2    
       - name: download libs
         run:
-          sudo apt-get install python3 |
+          sudo apt-get install python3 
+      - name: download requests 2
+        run:
           sudo apt-get install python3-requests
       - name: download python
         run:
